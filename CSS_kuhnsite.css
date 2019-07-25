@@ -60,6 +60,9 @@ li a{
 	padding: 1em 3em;
 	text-decoration:none;
 	}
+span{
+	display:block;
+}
 
 .icon{
 	/* display: flex; */
@@ -79,6 +82,7 @@ li a{
 		flex-direction: row;
 	}
 	span{
+		display:initial;
 		font-size: 2em;
 		padding-right: .5em;
 	}
