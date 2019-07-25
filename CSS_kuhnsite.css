@@ -7,11 +7,12 @@ body{
 }
 #profile{
 	border-radius:50%;
-	display: block;
+	display: flex;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2em;
 	}
+
 
 h1{
 	text-align: center;
@@ -28,22 +29,21 @@ ul {
 	position:fixed;
 	bottom: 0;
 	width:100%;
-	border: 0.1em solid white;
+	max-height: 25%;
+	border-top: 0.1em solid white;
+	display: flex;
+	flex-direction: row;
 	}
 	
 li{
 	float: left;
-	font-size: 1.5em;
-	font-weight: bold;
 	width: 33.33%;
-	padding: 1em;
 	border-right: 0.1em solid white;
 	opacity:0.85;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 	}
-
-li:last-child{
-	border-right:none;
-}
 
 li:hover{
 	opacity:1;
@@ -52,8 +52,17 @@ li:hover{
 }
 	
 li a{
-	display: inline-block;
+	width: 100%;
+	font-weight: bold;		
+	font-size: 1.5em;
+	display: block;
 	color:black;
-	padding: 1em 1em;
+	padding: 1em 3em;
 	text-decoration:none;
 	}
+
+.icon{
+	/* display: flex; */
+	max-width: 2.5em;
+	max-height: 2.5em;
+}
