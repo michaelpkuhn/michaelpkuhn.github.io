@@ -2,21 +2,34 @@
 	box-sizing:border-box;
 	}
 
+
 body{
 	background-color:black;
+	min-height: 100%;
+	margin: 0;
+	padding: 100;
 }
-#profile{
-	border-radius:50%;
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 2em;
-	}
 
+html{
+	height: 100%;
+}
+
+header {
+	display: flex;
+	flex-direction:column;
+	max-height: 50%;
+	justify-content: center;
+	align-items: center;
+}
+
+#profile{
+	border-radius: 50%;
+	height: 30vh;
+	}
 
 h1{
 	text-align: center;
-	font-size:3em;
+	font-size:6vh;
 	color: white;
 }
 	
@@ -29,20 +42,25 @@ ul {
 	position:fixed;
 	bottom: 0;
 	width:100%;
-	max-height: 40%;
+	height: 50%;
 	border-top: 0.1em solid white;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-direction: row;
 	}
 	
 li{
 	float: left;
 	width: 33.33%;
+	height:100%;
 	border-right: 0.1em solid white;
 	opacity:0.85;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	justify-content:center;
+	align-items: center;
 	}
 
 li:hover{
@@ -53,24 +71,25 @@ li:hover{
 	
 li a{
 	width: 100%;
+	height: 50%;
 	font-weight: bold;		
-	font-size: 1.5em;
-	display: block;
+	display: inline-block;
 	color:black;
-	padding: 1em 3em;
 	text-decoration:none;
 	}
+
 span{
+	font-size: 2.5em;
+	font-size: 3vw;
 	display:block;
 }
 
 .icon{
 	/* display: flex; */
-	max-width: 2.5em;
-	max-height: 2.5em;
+	height: 6vw;
 }
 
-@media (max-width: 850px){
+@media (max-width: 1080px){
 	ul{
 		flex-direction: column;
 		max-height: 50%;
@@ -78,12 +97,22 @@ span{
 	
 	li {
 		width: 100%;
-		height: 33%;
+		height: 33.33%;
 		flex-direction: row;
 	}
 	span{
 		display:initial;
 		font-size: 2em;
+		font-size: 3vh;
 		padding-right: .5em;
+	}
+}
+
+@media (max-height: 600px) {
+	#profile {
+		display: none;
+	}
+	h1{
+		font-size: 20vh;
 	}
 }
