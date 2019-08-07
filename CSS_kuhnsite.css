@@ -14,14 +14,6 @@ html{
 	height: 100%;
 }
 
-header {
-	display: flex;
-	flex-direction:column;
-	max-height: 50%;
-	justify-content: center;
-	align-items: center;
-}
-
 #profile{
 	border-radius: 50%;
 	height: 35vh;
@@ -32,8 +24,18 @@ h1{
 	font-size: 8vh;
 	color: white;
 }
+
+header {
+	display: flex;
+	flex-direction:column;
+	max-height: 50%;
+	justify-content: center;
+	align-items: center;
+}
+
 	
 ul {
+	border: Solid green;
 	list-style-type: none;
 	text-align: center;
 	margin: 0;
@@ -43,7 +45,7 @@ ul {
 	bottom: 0;
 	width:100%;
 	height: 35vh;
-	/* max-height: 50%; */
+	max-height: 50%;
 	border-top: 0.1em solid white;
 	display: flex;
 	align-items: center;
