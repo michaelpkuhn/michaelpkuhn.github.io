@@ -1,15 +1,13 @@
-*{
-	box-sizing:border-box;
-	}
+* { box-sizing:border-box;}
 
-html{
+html {
   height:100%;
   min-height:100%;
   width: 100%;
   min-width: 100%;
 }
 
-body{
+body {
 	background-color:black;
 	font-family: serif;
 	margin: 0;
@@ -19,7 +17,7 @@ body{
 }
 
 
-#profile{
+#profile {
 	border-radius: 50%;
 	height: 60%;
 	width: auto;
@@ -27,7 +25,7 @@ body{
 	max-width: 100%;
 	}
 
-h1{
+h1 {
 	text-align: center;
 }
 
@@ -59,7 +57,7 @@ ul {
 	flex-direction: row;
 	}
 	
-li{
+li {
 	float: left;
 	width: 33.33%;
 	height:100%;
@@ -71,11 +69,11 @@ li{
 	align-items: center;
 	}
 
-li:hover{
+li:hover {
 	opacity:1;
 }
 	
-li a{
+li a {
 	width: 100%;
 	height: 50%;
 	font-weight: bold;		
@@ -84,19 +82,19 @@ li a{
 	text-decoration:none;
 	}
 
-span{
+span {
 	font-size: 2.5em;
 	font-size: 6vh;
 	display:block;
 }
 
-.icon{
+.icon {
 	height: 7vh;
 }
 
 @media (max-width: 1200px){
 
-	ul{
+	ul {
 		flex-direction: column;
 	}
 	
@@ -106,14 +104,14 @@ span{
 		flex-direction: row;
 	}
 	
-	span{
+	span {
 		display:initial;
 		font-size: 2em;
 		font-size: 4vh;
 		padding-right: .5em;
 	}
 	
-	.icon{
+	.icon {
 		height: 5vh;
 	}
 }
@@ -124,11 +122,11 @@ span{
 		display: none;
 	}
 	
-	header{
+	header {
 		height: 20vh;
 	}
 	
-	ul{
+	ul {
 		height: 80vh;
 	}
 }
