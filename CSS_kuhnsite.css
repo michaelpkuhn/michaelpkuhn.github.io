@@ -16,7 +16,7 @@ html{
 
 #profile{
 	border-radius: 50%;
-	height: 60vh;
+	/* height: auto; */
 	}
 
 h1{
@@ -35,7 +35,6 @@ header {
 
 	
 ul {
-	border: Solid green;
 	list-style-type: none;
 	text-align: center;
 	margin: 0;
