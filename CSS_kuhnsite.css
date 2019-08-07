@@ -28,6 +28,7 @@ h1{
 
 header {
 	font-size: 4vh;
+	font-family: serif;
 	color: white;
 	display: flex;
 	flex-direction:column;
