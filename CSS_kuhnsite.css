@@ -43,7 +43,7 @@ ul {
 	bottom: 0;
 	width:100%;
 	height: 35vh;
-	max-height: 50%;
+	/* max-height: 50%; */
 	border-top: 0.1em solid white;
 	display: flex;
 	align-items: center;
@@ -78,31 +78,33 @@ li a{
 
 span{
 	font-size: 2.5em;
-	font-size: 3vw;
+	font-size: 4vw;
 	display:block;
 }
 
 .icon{
-	height: 4vh;
+	height: 6vh;
 }
 
 @media (max-width: 1200px){
+
 	h1{
-		/*Mobile chrome auto-sizes text by 105-130%, set max-width to 90vw (90% vw)*/
 		width: 70vw;
-	}
+	}	
 	
 	ul{
-		flex-direction: column;
 		height: 40vh;
-		max-height: 50%;
+		width: 100vw;
+		flex-direction: column;
 	}
 	
 	li {
 		width: 100%;
 		height: 33.33%;
+		/* flex-basis: 100vw; */
 		flex-direction: row;
 	}
+	
 	span{
 		display:initial;
 		font-size: 2em;
