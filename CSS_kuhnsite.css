@@ -87,6 +87,10 @@ span{
 }
 
 @media (max-width: 1200px){
+	html{
+		-webkit-text-size-adjust: 100%
+	}
+	
 	ul{
 		flex-direction: column;
 		height: 40vh;
