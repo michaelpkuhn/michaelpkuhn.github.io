@@ -30,14 +30,14 @@ h1 {
 }
 
 header {
-	font-size: 4vh;
+	font-size: 3.5vh;
 	color: white;
 	display: flex;
 	flex-direction:column;
-	height: 50vh;
+	height: 55vh;
 	justify-content: center;
 	align-items: center;
-	padding: 1vh 0vh;
+	padding: 5vh 0vh;
 }
 
 	
