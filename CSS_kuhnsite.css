@@ -83,12 +83,13 @@ span{
 }
 
 .icon{
-	height: 4vw;
+	height: 4vh;
 }
 
 @media (max-width: 1200px){
 	h1{
-		-webkit-text-size-adjust: 100%
+		/*Mobile chrome auto-sizes text by 105-130%, set max-width to 90vw (90% vw)*/
+		max-width: 90vw;
 	}
 	
 	ul{
