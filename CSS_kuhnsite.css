@@ -20,7 +20,8 @@ body{
 
 #profile{
 	border-radius: 50%;
-	height: 50vh;
+	height: auto;
+	width: auto;
 	max-height: 100%;
 	max-width: 100%;
 	}
@@ -40,10 +41,6 @@ header {
 	align-items: center;
 }
 
-#profile {
-	max-height: 100%;
-	width: auto;
-}
 	
 ul {
 	list-style-type: none;
