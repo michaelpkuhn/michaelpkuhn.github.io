@@ -11,7 +11,6 @@ body {
 	background-color:black;
 	font-family: serif;
 	margin: 0;
-	/* padding: 100; */
 	min-height:100%;
 	min-width: 100%;
 }
@@ -25,7 +24,6 @@ header {
 	flex-direction:column;
 	height: 55vh;
 	padding-top: 2.5vh;
-	border: solid yellow .1vh;
 }
 
 #profile {
@@ -128,8 +126,8 @@ span {
 		height: 20vh;
 	}
 	
-		li a {
-		padding-top: 8vh;
+	li a {
+		padding-top: 8.5vh;
 	}
 	
 	ul {
