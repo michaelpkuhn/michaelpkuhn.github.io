@@ -90,14 +90,14 @@ span{
 
 @media (max-width: 1200px){
 
-	h1{
-		font-size: 7vh;
-		max-width: 75%;
-	}	
+	/* h1{ */
+		/* font-size: 7vh; */
+		/* max-width: 75%; */
+	/* }	 */
 	
 	ul{
-		height: 40vh;
-		width: 100vw;
+		/* height: 40vh; */
+		/* width: 100vw; */
 		flex-direction: column;
 	}
 	
@@ -117,6 +117,12 @@ span{
 	
 	.icon{
 		height: 5vh;
+	}
+}
+
+@media (max-height: 900px) {
+	ul{
+	height
 	}
 }
 
