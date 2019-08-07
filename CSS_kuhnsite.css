@@ -24,12 +24,12 @@ header {
 
 #profile{
 	border-radius: 50%;
-	height: 30vh;
+	height: 35vh;
 	}
 
 h1{
 	text-align: center;
-	font-size:6vh;
+	font-size: 8vh;
 	color: white;
 }
 	
@@ -42,7 +42,8 @@ ul {
 	position:fixed;
 	bottom: 0;
 	width:100%;
-	height: 50%;
+	height: 35vh;
+	max-height: 50%;
 	border-top: 0.1em solid white;
 	display: flex;
 	align-items: center;
@@ -56,7 +57,6 @@ li{
 	height:100%;
 	border-right: 0.1em solid white;
 	opacity:0.85;
-	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content:center;
@@ -65,8 +65,6 @@ li{
 
 li:hover{
 	opacity:1;
-	/* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
-	/* text-shadow: 0px 0px 10px white, 0px 0px 5px white, 0px 0px 1px white; */
 }
 	
 li a{
@@ -85,13 +83,13 @@ span{
 }
 
 .icon{
-	/* display: flex; */
-	height: 6vw;
+	height: 4vw;
 }
 
-@media (max-width: 1080px){
+@media (max-width: 1200px){
 	ul{
 		flex-direction: column;
+		height: 40vh;
 		max-height: 50%;
 	}
 	
@@ -103,8 +101,12 @@ span{
 	span{
 		display:initial;
 		font-size: 2em;
-		font-size: 3vh;
+		font-size: 4vh;
 		padding-right: .5em;
+	}
+	
+	.icon{
+		height: 5vh;
 	}
 }
 
