@@ -44,8 +44,8 @@ ul {
 	position:fixed;
 	bottom: 0;
 	width:100%;
-	height: 35vh;
-	max-height: 50%;
+	height: 40vh;
+	max-height: 45%;
 	border-top: 0.1em solid white;
 	display: flex;
 	align-items: center;
@@ -80,12 +80,12 @@ li a{
 
 span{
 	font-size: 2.5em;
-	font-size: 4vw;
+	font-size: 6vh;
 	display:block;
 }
 
 .icon{
-	height: 6vh;
+	height: 7vh;
 }
 
 @media (max-width: 1200px){
