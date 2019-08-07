@@ -87,7 +87,7 @@ span{
 }
 
 @media (max-width: 1200px){
-	html{
+	*{
 		-webkit-text-size-adjust: 100%
 	}
 	
