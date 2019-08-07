@@ -89,7 +89,7 @@ span{
 @media (max-width: 1200px){
 	h1{
 		/*Mobile chrome auto-sizes text by 105-130%, set max-width to 90vw (90% vw)*/
-		max-width: 70vw;
+		width: 70vw;
 	}
 	
 	ul{
