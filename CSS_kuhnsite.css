@@ -16,6 +16,14 @@ body {
 	min-width: 100%;
 }
 
+#profile {
+	border-radius: 50%;
+	height: 100%;
+	width: auto;
+	max-height: 480px;
+	max-width: 480px;
+	}
+
 header {
 	font-size: 3vh;
 	color: white;
@@ -28,13 +36,6 @@ header {
 	padding-top: 2.5vh;
 }
 
-#profile {
-	border-radius: 50%;
-	height: 100%;
-	width: auto;
-	max-height: 480px;
-	max-width: 480px;
-	}
 
 	
 ul {
