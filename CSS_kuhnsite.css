@@ -33,11 +33,9 @@ header {
 	justify-content: center;
 	flex-direction:column;
 	height: 55vh;
-	padding-top: 2.5vh;
+	padding: 5vh 0vw;
 }
 
-
-	
 ul {
 	list-style-type: none;
 	text-align: center;
