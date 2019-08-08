@@ -33,7 +33,7 @@ header {
 	justify-content: center;
 	flex-direction:column;
 	height: 55vh;
-	/* padding: 5vh 0vw; */
+	padding: 5vh 0vw;
 }
 
 ul {
