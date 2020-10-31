@@ -1,12 +1,4 @@
-#profile {
-	border-radius: 50%;
-    max-height: 25vh;
-	max-width: 25vw;
-	}
-
-.icon {
-    height: 6vh;
-}
+/* Window Config */
 
 .wrapper {
     display: flex;
@@ -25,8 +17,19 @@
 }
 
 
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+/* Profile Picture */
+#profile {
+	border-radius: 50%;
+    max-height: 25vh;
+	max-width: 25vw;
+    }
 
+.icon {
+    height: 6vh;
+}
+
+/* Formatting*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -38,8 +41,10 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: #2d333a;
 }
+
+/* Hover functionality */
 
 a, a:hover, a:focus {
     color: inherit;
@@ -47,8 +52,9 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
+/* Sidebar config */
+
 #sidebar {
-    /* don't forget to add all the previously mentioned styles here too */
     background: #7386D5;
     color: #fff;
     transition: all 0.3s;
@@ -65,7 +71,6 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul span {
-    color: #fff;
     padding: 10px;
     font-size: 24px;
 }
@@ -79,29 +84,33 @@ a, a:hover, a:focus {
     font-size: 1.1em;
     display: block;
 }
+
 #sidebar ul li a:hover {
     color: #7386D5;
-    background: #fff;
+    background: #fafafa;
 }
 
 #sidebar ul li a:hover span {
     color: black;
-
+    text-shadow: none;
 }
 
+/* Keeps Dropdown Menu white when hovering dropdown items */
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #7386D5;
-    background: #fff;
+    background: #fafafa;
+    color: black;
 }
 #sidebar ul li.active span {
     color: black;
 }
 
+/* PDF Download link not visible when pdf display visible */
+
 #pdf_download{
     display:none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
     #pdf_viewer{
         display: none;
     }
@@ -110,3 +119,28 @@ a, a:hover, a:focus {
     }
 }
 
+@media (max-width: 600px){
+    /* Sidebar becomes top bar */
+    .wrapper{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #container {
+        /* min-height: 50vh; */
+        /* flex: 2 100vw; */
+    }
+
+    #sidebar {
+        min-width: 100vw;
+        max-width: 100vw;
+        padding: 0px;
+        min-height: 25vh;
+        /* max-height: 25%; */
+        /* flex: 1 100vw; */
+    }
+
+    #sidebar ul li {
+        margin: 1px 0px
+    }
+}
