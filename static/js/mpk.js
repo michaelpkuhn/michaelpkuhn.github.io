@@ -1,11 +1,11 @@
 
 function collapse(id){
     elem = document.getElementById(id);
-    display = elem.style.display
+    display = elem.style.display;
     if (display) {
-        elem.style.display = ""
+        elem.style.display = "";
     }
-    else{
-        elem.style.display = "block"
+    else {
+        elem.style.display = "block";
     }
 }
