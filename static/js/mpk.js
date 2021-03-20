@@ -23,12 +23,12 @@ function loadPage(click){
 
     // Does nothing if the clicked page is the same as the active page
     let active = document.querySelector(".active")
+    let parent = span.parentElement
     if (active === parent) {return null}
 
     // Grab Elements
     let header = document.querySelector("#pdf_viewer h2")
     let iframe = document.querySelector("#pdf_viewer iframe")
-    let parent = span.parentElement
 
     // Uses span id to get resource data object
     const page = resources[span.id]
