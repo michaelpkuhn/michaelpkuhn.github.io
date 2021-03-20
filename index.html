@@ -6,6 +6,7 @@
 	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 	<meta http-equiv="Pragma" content="no-cache" />
 	<meta http-equiv="Expires" content="0" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title>Michael Kuhn</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -23,20 +24,26 @@
 
 	<!-- <ul class="list-unstyled components"> -->
 	<ul class="components">
+	
 	<li class="active">
-	<a href="#">
-	<span>Resume</span>
-	</a>
+	<!-- <button id="resume" class="nav_button"> -->
+		<span id="resume" class="nav_button">Resume</span>
+	<!-- </button> -->
 	</li>
 
-	<li>
-	<a href="coverletter.html">
-	<span>Cover Letter</span>
-	</a>
+	<li class="inactive">
+	<!-- <button id="cover_letter" class="nav_button"> -->
+		<span id="cover_letter" class="nav_button">Cover Letter</span>
+	<!-- </button> -->
 	</li>
 	<li>
-		<button class="components" onclick="collapse('projects')">
-		<span>Websites</span>
+		<a href="mailto:mickuhn95@gmail.com">
+		<span>Email</span>
+	</a>
+	<li id="websites">
+		<!-- <button class="components" onclick="collapse('projects')"> -->
+		<button>
+			<span>Websites</span>
 		</button>
 		<div class="dropdown_custom" id='projects'>
 			<a class="link" href="https://github.com/michaelpkuhn">Github</a>
@@ -44,10 +51,6 @@
 			<a class="link" href="https://mediabias.herokuapp.com/">MediaBias Project</a>
 		</div>
 	</li>
-	<li>
-		<a href="mailto:mickuhn95@gmail.com">
-	<span>Email</span>
-	</a>
 </li>
 </ul>
 </nav>
