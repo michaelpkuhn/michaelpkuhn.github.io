@@ -16,7 +16,6 @@
     min-height: 100vh;
 }
 
-
 /* Profile Picture */
 #profile {
 	border-radius: 50%;
@@ -24,8 +23,13 @@
 	max-width: 25vw;
     }
 
+.profile_icon {
+    height: 2rem;
+}
+
+
 .icon {
-    height: 6vh;
+    height: 3rem;
 }
 
 /* Formatting*/
@@ -50,6 +54,10 @@ button {
     color: inherit;
 	border: none;
 	padding: 0;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
 }
 
 /* Sidebar config */
@@ -84,6 +92,8 @@ button {
     box-sizing: content-box;
 }
 
+/* Hover and drop down */
+
 #sidebar ul li:hover{
     color: black;
     background: #fafafa;
@@ -109,14 +119,6 @@ button {
 #websites button {
     outline: inherit;
     text-decoration: underline;
-}
-
-/* Hover functionality */
-
-a, a:hover, a:focus {
-    color: inherit;
-    /* text-decoration: none; */
-    transition: all 0.3s;
 }
 
 /* PDF Download link not visible when pdf display visible */
