@@ -1,0 +1,2 @@
+---
+BUNDLE_HTTP_PARSER__RB: "--use-system-libraries"
