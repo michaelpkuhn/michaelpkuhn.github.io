@@ -1,0 +1,27 @@
+.nav-menu {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    background-color: mediumseagreen;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: block;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 2em;
+}
+
+.nav-item:hover {
+    opacity: 0.8;
+}
+
+.nav-item-active {
+    background-color: mediumseagreen !important;
+}
