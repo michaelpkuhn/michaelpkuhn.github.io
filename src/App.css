@@ -27,9 +27,39 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: vars(--theme-black);
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.nav-menu {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  /* background-color: green; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: block;
+  background-color: rgba(0,0,0,0,0);
+  color: white;
+  text-decoration: none;
+  padding: 2em;
+}
+
+.nav-item:hover {
+  background-color: rgba(0,0,0,0.1);
+  /* box-shadow: black; */
+}
+
+.nav-item-active {
+  /* background-color: mediumseagreen !important; */
+  color: var(--theme-black)
 }
