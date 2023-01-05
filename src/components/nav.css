@@ -4,7 +4,7 @@
     justify-content: center;
     bottom: 0;
     width: 100%;
-    background-color: mediumseagreen;
+    /* background-color: green; */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -12,16 +12,18 @@
 
 .nav-item {
     display: block;
-    background-color: green;
+    background-color: rgba(0,0,0,0,0);
     color: white;
     text-decoration: none;
     padding: 2em;
 }
 
 .nav-item:hover {
-    opacity: 0.8;
+    background-color: rgba(0,0,0,0.1);
+    /* box-shadow: black; */
 }
 
 .nav-item-active {
-    background-color: mediumseagreen !important;
+    /* background-color: mediumseagreen !important; */
+    color: var(--theme-black)
 }

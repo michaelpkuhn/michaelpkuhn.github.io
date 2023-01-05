@@ -1,4 +1,5 @@
 import './nav.css'
+import '../App.css'
 import { useState } from 'react'
 
 export default function NavBar(){
@@ -26,8 +27,7 @@ export default function NavBar(){
 
     return (
         <nav>
-            <ul className="nav-menu">
-                <NavItem page="Home"/>
+            <ul className="nav-menu background">
                 <NavItem page="About"/>
                 <NavItem page="Contact"/>
             </ul>
