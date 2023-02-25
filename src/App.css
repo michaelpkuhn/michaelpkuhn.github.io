@@ -156,12 +156,3 @@
   border: 1px rgba(0,0,0, 0.5) solid;
   border-radius: 50%;
 }
-
-.example-appear {
-  opacity: 0.01;
-}
-
-.example-appear.example-appear-active {
-  opacity: 1;
-  transition: opacity .5s ease-in;
-}
