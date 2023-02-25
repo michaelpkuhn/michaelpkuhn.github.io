@@ -1,0 +1,158 @@
+:root{
+  --theme-white: #F5F6F0;
+  --theme-grey: #C6CDC1;
+  --theme-black: #44403f;
+  --theme-green: #63A15F;
+}
+
+* {
+  font-family: "roboto", monospace;
+}
+
+.background {
+  background-color: var(--theme-green);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 20em;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.App-header {
+  background-color: VARS(--theme-white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: vars(--theme-black);
+}
+
+.App-header .Container{
+  padding: 0px 10vw;
+  font-size: 16px;
+  max-width: 50em;
+}
+
+.App-header .Container p{
+  text-align: justify;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.nav-menu {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  /* background-color: green; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item,
+.nav-menu button {
+  display: block;
+  /* background-color: rgba(0,0,0,0,0); */
+  background-color: inherit;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2em;
+  border: none;
+}
+
+.nav-item:hover,
+.nav-menu button:hover {
+  background-color: rgba(0,0,0,0.1);
+  /* box-shadow: black; */
+}
+
+.nav-item-active {
+  /* background-color: mediumseagreen !important; */
+  color: var(--theme-black)
+}
+
+.Overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+  backdrop-filter: blur(3px);
+}
+
+.Page {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  background-color: var(--theme-white);
+  border: var(--theme-black) solid 1px;
+  height: 480px;
+  width: 720px;
+  margin: -240px 0 0 -360px;
+  border-radius: 40px;
+  box-shadow: 2px 2px 26px var(--theme-black);
+  padding: 1em 2em;
+  text-align: left;
+}
+
+.Page form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2em 1em;
+  height: 80%;
+}
+
+.Page form div {
+  display: flex;
+  flex-direction: row;
+}
+
+.Page form label{
+  width: 30%;
+  
+}
+
+.Page form input{
+  width: 60%;
+  position: relative;
+  left: 0;
+}
+
+.Page form #message {
+  height: 20ch;
+}
+
+.Page form button {
+  width: 10em;
+  height: 2em;
+  border-radius: 5px;
+  border: none;
+  background-color: #abc69e;
+}
+
+.Overlay .close {
+  position: absolute;
+  top: -2em;
+  right: -2em;
+  background-color: #abc69e;
+  height: 5em;
+  width: 5em;
+  border: 1px rgba(0,0,0, 0.5) solid;
+  border-radius: 50%;
+}
