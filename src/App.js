@@ -107,6 +107,8 @@ function ContactPage(props) {
       .catch((err) => {
         console.log('FAILED...', err);
       });
+    // TODO: indicate to user that email sent 
+    props.onClose();
   };
 
   const handleChange = (e) => {
