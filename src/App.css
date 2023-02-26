@@ -54,7 +54,6 @@
   justify-content: center;
   bottom: 0;
   width: 100%;
-  /* background-color: green; */
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -63,7 +62,6 @@
 .nav-item,
 .nav-menu button {
   display: block;
-  /* background-color: rgba(0,0,0,0,0); */
   background-color: inherit;
   color: white;
   font-size: 16px;
@@ -77,11 +75,9 @@
 .nav-item:hover,
 .nav-menu button:hover {
   background-color: rgba(0,0,0,0.1);
-  /* box-shadow: black; */
 }
 
 .nav-item-active {
-  /* background-color: mediumseagreen !important; */
   color: var(--theme-black)
 }
 
@@ -101,13 +97,26 @@
   top: 50%;
   background-color: var(--theme-white);
   border: var(--theme-black) solid 1px;
-  height: 480px;
-  width: 720px;
-  margin: -240px 0 0 -360px;
+  height: 50vh;
+  width: 60vw;
+  margin: -25vh 0 0 -40vw;
   border-radius: 40px;
   box-shadow: 2px 2px 26px var(--theme-black);
   padding: 1em 2em;
   text-align: left;
+}
+
+.Page div {
+  overflow-y: auto;
+  height: 100%;
+}
+
+@media (min-width: 960px) {
+  .Page {
+    height: 480px;
+    width: 720px;
+    margin: -240px 0 0 -360px;
+  }
 }
 
 .Page form{
@@ -148,11 +157,18 @@
 
 .Overlay .close {
   position: absolute;
-  top: -2em;
+  bottom: -2em;
   right: -2em;
   background-color: #abc69e;
   height: 5em;
   width: 5em;
   border: 1px rgba(0,0,0, 0.5) solid;
   border-radius: 50%;
+}
+
+@media (min-width: 960px) {
+  .Overlay .close {
+    top: -2em;
+    right: -2em;
+  }
 }
