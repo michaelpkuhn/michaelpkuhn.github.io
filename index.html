@@ -11,22 +11,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/static/main.css">
-    </head>
+        <script src="/static/components/header.js" type="text/javascript" defer></script>
+        <script src="/static/components/footer.js" type="text/javascript" defer></script>
+      </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header class="container">
-            <div><a>Michael</a></div>
-            <nav>
-                <ul>
-                    <li><a id="current" href="/home.html">Home</a></li>
-                    <li><a href="/pages/about.html">About</a></li>
-                    <li><a href="/pages/projects.html">Projects</a></li>
-                    <li><a href="mailto:mickuhn95@gmail.com">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <header-component></header-component>
+
         <main class="container">
             <div>
                 <h1>Hi,</h1>
@@ -38,11 +31,7 @@
                 </div>
             </div>
         </main>
-        <footer class="container">
-            <div>
-                <p>Michael Kuhn © 2024</p>
-            </div>
-        </footer>
+        <footer-component></footer-component>
         <script src="" async defer></script>
     </body>
     
