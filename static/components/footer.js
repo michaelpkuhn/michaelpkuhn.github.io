@@ -1,7 +1,8 @@
 const footerTemplate = document.createElement('template');
 
 footerTemplate.innerHTML = `
-  <link rel="stylesheet" href="/static/main.css">
+  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="stylesheet" href="/static/css/mobile.css">
   <footer class="container">
   <div>
       <p>Michael Kuhn © 2024</p>

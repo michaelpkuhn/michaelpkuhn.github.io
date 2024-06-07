@@ -40,6 +40,10 @@ main.container{
     align-items: center;
 }
 
+div#about{
+    width: 50em;
+}
+
 footer {
     font-size: 0.8em;
     font-style: italic;
@@ -56,4 +60,5 @@ body {
 * {
     box-sizing: border-box;
     margin: 0px;
+    max-width: 100%;;
 }

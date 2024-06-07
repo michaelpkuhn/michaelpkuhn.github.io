@@ -1,9 +1,10 @@
 const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
-    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/mobile.css">
     <header class="container">
-    <div><a>Michael</a></div>
+    <div id="homeName"><a>Michael</a></div>
     <nav>
         <ul>
             <li><a href="/index.html">Home</a></li>
