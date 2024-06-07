@@ -6,7 +6,7 @@ headerTemplate.innerHTML = `
     <div><a>Michael</a></div>
     <nav>
         <ul>
-            <li><a id="current" href="/index.html">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="/pages/about.html">About</a></li>
             <li><a href="/pages/projects.html">Projects</a></li>
             <li><a href="mailto:mickuhn95@gmail.com">Contact</a></li>
@@ -17,13 +17,20 @@ headerTemplate.innerHTML = `
 
 class Header extends HTMLElement {
   constructor() {
-    super();
+    self = super();
   }
 
   connectedCallback() {
-    const shadowRoot = this.attachShadow({ mode: 'closed' });
+    const shadowRoot = this.attachShadow({ mode: 'open' });
 
     shadowRoot.appendChild(headerTemplate.content);
+
+    shadowRoot.querySelectorAll("nav ul a").forEach((e)=>{
+        let activePageBool = e.href == window.location.href;
+        if(activePageBool){
+            e.id = 'current';
+        }
+    })
   }
 }
 
