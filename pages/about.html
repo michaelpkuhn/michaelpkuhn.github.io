@@ -10,33 +10,25 @@
         <title>About - Michael</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/static/main.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/mobile.css">
+        <script src="/static/components/header.js" type="text/javascript" defer></script>
+        <script src="/static/components/footer.js" type="text/javascript" defer></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header class="container">
-            <div><a>Michael</a></div>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a id="current" href="/pages/about.html">About</a></li>
-                    <li><a href="/pages/projects.html">Projects</a></li>
-                    <li><a href="mailto:mickuhn95@gmail.com">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <header-component></header-component>
+
         <main class="container">
-            <div>
-                As a graduate student in Civic Analytics and the Senior Manager of Online Giving and Donor Data at United Way of Metro Chicago, my unique perspective and diverse experience make me a valuable asset to any organization seeking to create positive change in our community. I am passionate about using data-driven decision-making and creativity to provide exceptional customer experiences that drive engagement and support our mission. My commitment to social impact and community service drives me to continuously seek innovative ways to achieve our goals.
+            <div id="about">
+                <h1>About</h1>
+                <hr><br>
+                <p>As a graduate student in Civic Analytics and the Senior Manager of Online Giving & Donor Data at United Way of Metro Chicago, my unique perspective and diverse experience make me a valuable asset to any organization seeking to create positive change in our community. I am passionate about using data-driven decision-making and creativity to provide exceptional customer experiences that drive engagement and support our mission. My commitment to social impact and community service drives me to continuously seek innovative ways to achieve our goals.</p>
             </div>
         </main>
-        <footer class="container">
-            <div>
-                <p>Michael Kuhn © 2024</p>
-            </div>
-        </footer>
+        <footer-component></footer-component>
         <script src="" async defer></script>
     </body>
     
