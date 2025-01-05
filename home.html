@@ -10,8 +10,36 @@
         <title>Michael Kuhn</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/variables.css">
         <link rel="stylesheet" href="/static/main.css">
         <link rel="stylesheet" href="/static/particles.css">
+        <link rel="stylesheet" href="/static/form.css">
+
+        <style>
+            * {
+                    box-sizing: border-box;
+                    margin: 0px;
+                    position: relative;
+                    color: var(--ash-15);
+                }
+
+                html {
+                    height: 100vh;
+                    width: 100vw;
+                    overflow-x: hidden;
+                    margin: 0px;
+                    padding: 0px;
+                    scroll-behavior: smooth;
+                }
+                main,
+                body {
+                    min-height: 100%;
+                    width: 100%;
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+        </style>
     </head>
     <body>
         
@@ -32,32 +60,111 @@
         </header> -->
         <main class="container">
             <span class="test">main container</span>
-            <div id="profile">
-                <span class="test">profile container</span>
-                <div>
-                    <h1>Hi,</h1>
-                    <h1>I'm Michael</h1>
-                </div>
-                <div>
+            <div id="Home" class="container">
+                <span class="test">home container</span>
+                <a href="#Home"></a>
+                
+                <div id="profile">
+                    <span class="test">profile container</span>
                     <div>
-                        <img src="static/src/profile.jpg">
+                        <h1>Hi,</h1>
+                        <h1>I'm Michael</h1>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="static/src/profile.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Nonprofit Data and Operations Professional</h2>
                     </div>
                 </div>
-                <div>
-                    <h2>Nonprofit Data and Operations Professional</h2>
+                <div id="nav_container">
+                    <span class="test">nav container</span>
+                    <nav id="v_nav">
+                        <ul>
+                            <li><a class="nav_links" id="current" href="/home.html">Home</a></li>
+                            <li><a class="nav_links" href="#About">About</a></li>
+                            <li><a class="nav_links" href="#Projects">Projects</a></li>
+                            <li><a class="nav_links" href="mailto:mickuhn95@gmail.com">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <div id="nav_container">
-                <span class="test">nav container</span>
-                <nav id="v_nav">
-                    <ul>
-                        <li><a class="nav_links" id="current" href="/home.html">Home</a></li>
-                        <li><a class="nav_links" href="/pages/about.html">About</a></li>
-                        <li><a class="nav_links" href="/pages/projects.html">Projects</a></li>
-                        <li><a class="nav_links" href="mailto:mickuhn95@gmail.com">Contact</a></li>
-                    </ul>
-                </nav>
+            <div class="spacer_test">spacer</div>
+
+            <div id="About" class="container">
+                <span class="test">about container</span>
+                <a href="#About"></a>
+                <div>
+                    <h1>About Me</h1>
+                    <p>Hi, I'm Michael. I'm a nonprofit data and operations professional with a passion for using data to drive social impact. I have experience in data analysis, data visualization, and data management. I'm also skilled in project management, operations, and process improvement. I'm currently working as a Data Analyst at a nonprofit organization in New York City. I'm always looking for new opportunities to learn and grow in the field of data and operations.</p>
+                </div>
+            
             </div>
+            <div class="spacer_test">spacer</div>
+            <div id="Projects" class="container">
+                <h1>Projects</h1>
+                <span class="test">projects container</span>
+                <a href="#Projects"></a>
+                <div>
+                    <ul>
+                        <li><a href="/pages/projects/PA470_CookCounty.html"><b>PA 470 -</b> Cook County Property Tax</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spacer_test">spacer</div>
+            <div id="Contact" class="container">
+                <span class="test">contact container</span>
+                <a href="#Contact"></a>
+                <div>
+                    <!-- 
+                        This is a working contact form. To receive email, 
+                        Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+                        Create Access Key here 👉 https://web3forms.com/
+                    -->
+                    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+                    <section class="contact-section">
+                        <div class="contact-intro">
+                        <h2 class="contact-title">Get in Touch</h2>
+                        <p class="contact-description">
+                            Fill out the form below and we'll get back to you as soon as possible.
+                        </p>
+                        </div>
+                        <!-- replace should be more obvious -->
+                        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" target="dummyframe">
+                    
+                        <input type="hidden" name="access_key" value="6624ecc8-af9f-4bce-ba7c-2a9eb7213241" />
+                        <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+                        <input type="hidden" name="from_name" value="My Website" />
+                        <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+                    
+                        <div class="form-group-container">
+                            <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+                            </div>
+                            <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+                            </div>
+                            <div class="form-group">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+                            </div>
+                            <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                        <button class="form-submit" type="submit">Send Message</button>
+                        </form>
+                    
+                    </section>
+                </div>
+            </div>
+
                     <!-- particles.js container -->
         <div id="particles-js"></div> <!-- stats - count particles -->
         <!-- <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> -->
