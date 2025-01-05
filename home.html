@@ -11,12 +11,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/static/main.css">
+        <link rel="stylesheet" href="/static/particles.css">
     </head>
     <body>
+        
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header class="container">
+        <!-- <header class="container">
+            <span class="test">header container</span>
             <div><a>Michael</a></div>
             <nav>
                 <ul>
@@ -26,22 +29,50 @@
                     <li><a href="mailto:mickuhn95@gmail.com">Contact</a></li>
                 </ul>
             </nav>
-        </header>
+        </header> -->
         <main class="container">
-            <div>
-                <h1>Hi,</h1>
-                <h1>I'm Michael</h1>
-            </div>
-            <div>
+            <span class="test">main container</span>
+            <div id="profile">
+                <span class="test">profile container</span>
                 <div>
-                    <img src="static/src/profile.jpg">
+                    <h1>Hi,</h1>
+                    <h1>I'm Michael</h1>
+                </div>
+                <div>
+                    <div>
+                        <img src="static/src/profile.jpg">
+                    </div>
+                </div>
+                <div>
+                    <h2>Nonprofit Data and Operations Professional</h2>
                 </div>
             </div>
+            <div id="nav_container">
+                <span class="test">nav container</span>
+                <nav id="v_nav">
+                    <ul>
+                        <li><a class="nav_links" id="current" href="/home.html">Home</a></li>
+                        <li><a class="nav_links" href="/pages/about.html">About</a></li>
+                        <li><a class="nav_links" href="/pages/projects.html">Projects</a></li>
+                        <li><a class="nav_links" href="mailto:mickuhn95@gmail.com">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+                    <!-- particles.js container -->
+        <div id="particles-js"></div> <!-- stats - count particles -->
+        <!-- <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> -->
+        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+
         </main>
         <footer class="container">
+            <span class="test">footer container</span>
             <div>
-                <p>Michael Kuhn © 2024</p>
+                <p>Michael Kuhn © 2025</p>
             </div>
+            <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+            <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    
+            <script type="text/javascript" src="/static/particles.js"></script>
         </footer>
         <script src="" async defer></script>
     </body>
