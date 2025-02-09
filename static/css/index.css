@@ -1,20 +1,32 @@
-.mpk_row {
-    height: 80vh;
-    margin-bottom: 20vh;
-}
-
-.mpk_section .row > div {
-    background: white;
-    box-shadow: 0px 0px 40px 40px white;
-    border-radius: 1em;
+body {
+    margin-right: 5em;
 }
 
 p {
     font-size: 18px;
 }
 
-footer div{
-    background-color: white;;
+nav {
+    color: black;
+    position: fixed;
+    right: 1em;
+    top: 35vh;
+}
+
+nav a.current {
+    font-weight: bold;
+    cursor: default;
+}
+
+.mpk_row {
+    height: 80vh;
+    margin-bottom: 20vh;
+}
+
+.cloudy {
+    background: white;
+    box-shadow: 0px 0px 40px 40px white;
+    border-radius: 1em;
 }
 
 .btn-custom{
