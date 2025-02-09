@@ -1,0 +1,50 @@
+body {
+    margin-right: 5em;
+}
+
+p {
+    font-size: 18px;
+}
+
+nav {
+    color: black;
+    position: fixed;
+    right: 1em;
+    top: 35vh;
+}
+
+nav a.current {
+    font-weight: bold;
+    cursor: default;
+}
+
+.mpk_row {
+    height: 80vh;
+    margin-bottom: 20vh;
+}
+
+.cloudy {
+    background: white;
+    box-shadow: 0px 0px 40px 40px white;
+    border-radius: 1em;
+}
+
+.btn-custom{
+    background-color: #644da9; /* Purple color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #503a8b; /* Darker shade of purple */
+    color: #e0d7ff; /* Lighter shade of white for better contrast */
+}
