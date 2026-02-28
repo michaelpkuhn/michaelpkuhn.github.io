@@ -53,12 +53,8 @@
         <div class="row justify-content-center align-items-center mpk_row">
             <div class="col-8 cloudy">
                 <h1>About Me</h1>
-                <p>I'm a data and operations professional with a passion for using data to
-                    drive social impact. I have experience in data analysis, data visualization, and data management in the public and nonprofit sectors.
-                    I'm also skilled in project management, operations, and process improvement. I'm currently working
-                    at United Way of Metro Chicago. I'm always looking for new
-                    opportunities to learn and grow in the field of data analysis and operations.</p>
-                <a href="static/src/2025_KuhnResumePublicCopy.pdf" target="_blank" class="btn btn-custom" download>Resume <i class="bi bi-download"></i></a>
+                <p>I'm a data and operations professional with a passion for using data to drive social impact. I have experience in data analysis, data visualization, and data management in the public and nonprofit sectors. I'm also skilled in project management, operations, and process improvement. I am a Business Intelligence Analyst at Metropolitan Family Services.</p>
+                <!-- <a href="" target="_blank" class="btn btn-custom" download>Resume <i class="bi bi-download"></i></a> -->
             </div>
         </div>
     </div>
@@ -76,14 +72,14 @@
                         </p>
                     </div>
                     <!-- replace should be more obvious -->
-                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST"
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" id="form-id"
                         target="dummyframe">
 
                         <input type="hidden" name="access_key" value="6624ecc8-af9f-4bce-ba7c-2a9eb7213241" />
                         <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
                         <input type="hidden" name="from_name" value="My Website" />
                         <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
-
+                           
                         <div class="form-group-container">
                             <div class="form-group mb-3">
                                 <label for="name" class="form-label">Name</label>
@@ -104,6 +100,7 @@
                                 <textarea class="form-textarea form-control" id="message" name="message"
                                     placeholder="Your message" rows="4"></textarea>
                             </div>
+                            <div class="h-captcha" data-captcha="true"></div>
                         </div>
                         <button class="form-submit btn btn-custom" type="submit">Send Message</button>
                     </form>
@@ -141,6 +138,21 @@
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="/static/js/index.js"></script>
     <script type="text/javascript" src="/static/particles.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script>
+    const form = document.getElementById('form-id');
+
+    form.addEventListener('submit', function(e) {
+
+        const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+        if (!hCaptcha) {
+            e.preventDefault();
+            alert("Please fill out captcha field")
+            return
+        }
+    });
+    </script>
 </body>
 
 </html>
